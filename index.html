@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="weather-container">
+    <div class="cover">
+      <span class="material-symbols-outlined">
+      cloud
+      </span>
+      <p>Cloud Code</p>
+    </div>
+    <div class="search-container">
+      <span class="material-symbols-outlined">
+      location_on
+      </span>
+      <input type="text" id="cityInput" placeholder="Enter city...">
+      <button id="searchBtn"><span class="material-symbols-outlined"> search </span></button>
+    </div>
+    <div class="err">
+      Enter Valid City
+    </div>
+    <div class="weather-card">
+      <div class="current-weather">
+        <img class="weather-icon" src="rain.png" alt="Weather Icon">
+        <h2 id="temperature"></h2>
+        <h3 id="city"></h3>
+      </div>
+      <div class="details-box">
+        <div class="detail">
+          <span class="material-symbols-outlined detimg">
+          water
+          </span>
+          <span>
+            <p id="humidity"></p>
+            <h3>Humidity</h3>
+          </span>
+        </div>
+        <div class="detail">
+          <span class="material-symbols-outlined detimg">
+          air
+          </span>
+          <span>
+            <p id="windSpeed"></p>
+            <h3>Wind Speed</h3>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&gt;_&lt; Coded by Developer Dipu.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
